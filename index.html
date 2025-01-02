@@ -3,52 +3,815 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yemen Medical License Exam - Official examination platform for medical professionals">
     <title>Yemen Medical License Exam</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Landing Page -->
-    <div id="landing-page" class="landing-page">
+    <div id="landing-page" class="landing-page" role="banner">
         <div class="landing-content">
             <h1>Yemen Medical License Exam</h1>
             <p class="quote">"Excellence is not a skill; it is an attitude."</p>
+            <p class="exam-info">Aden, December 30, 2024</p>
         </div>
     </div>
 
     <!-- Exam Page -->
-    <div id="exam-page" class="exam-page">
+    <div id="exam-page" class="exam-page" role="main">
         <header>
             <h1>Yemen Medical License Exam</h1>
             <p class="exam-details">Aden, December 30, 2024</p>
+            <div class="exam-progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
         </header>
 
         <main>
             <div class="question-container">
-                <div class="question">
-                    <p>1. Most common causes of hypothyroidism in the United States?</p>
-                    <ul class="options">
-                        <li data-correct="false">Iodine deficiency</li>
-                        <li data-correct="true">Hashimoto thyroiditis</li>
-                        <li data-correct="false">After thyroidectomy</li>
-                        <li data-correct="false">Congenital hypothyroidism</li>
+                <div class="question" role="group" aria-labelledby="q1">
+                    <p id="q1">1. Most common causes of hypothyroidism in the United States?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="false">Iodine deficiency</li>
+                        <li role="radio" tabindex="0" data-correct="true">Hashimoto thyroiditis</li>
+                        <li role="radio" tabindex="0" data-correct="false">After thyroidectomy</li>
+                        <li role="radio" tabindex="0" data-correct="false">Congenital hypothyroidism</li>
                     </ul>
                 </div>
-                <div class="question">
-                    <p>2. Most common causative organism for subacute endocarditis?</p>
-                    <ul class="options">
-                        <li data-correct="true">Streptococcus viridans</li>
-                        <li data-correct="false">Staphylococcus aureus</li>
-                        <li data-correct="false">Enterococcus</li>
-                        <li data-correct="false">HACEK organisms</li>
+                <div class="question" role="group" aria-labelledby="q2">
+                    <p id="q2">2. Most common causative organism for subacute endocarditis?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Streptococcus viridans</li>
+                        <li role="radio" tabindex="0" data-correct="false">Staphylococcus aureus</li>
+                        <li role="radio" tabindex="0" data-correct="false">Enterococcus</li>
+                        <li role="radio" tabindex="0" data-correct="false">HACEK organisms</li>
                     </ul>
                 </div>
-                <!-- Add more questions here -->
+                <div class="question" role="group" aria-labelledby="q3">
+                    <p id="q3">3. Most common causes of infective endocarditis in valvular heart diseases?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Streptococcus viridans</li>
+                        <li role="radio" tabindex="0" data-correct="false">Staphylococcus aureus</li>
+                        <li role="radio" tabindex="0" data-correct="false">Enterococcus</li>
+                        <li role="radio" tabindex="0" data-correct="false">HACEK organisms</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q4">
+                    <p id="q4">4. Most common causes of infective endocarditis in parenteral drug use?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Staphylococcus aureus</li>
+                        <li role="radio" tabindex="0" data-correct="false">Streptococcus viridans</li>
+                        <li role="radio" tabindex="0" data-correct="false">Enterococcus</li>
+                        <li role="radio" tabindex="0" data-correct="false">HACEK organisms</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q5">
+                    <p id="q5">5. String sign is seen in which disease?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Crohn's disease</li>
+                        <li role="radio" tabindex="0" data-correct="false">Ulcerative colitis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Celiac disease</li>
+                        <li role="radio" tabindex="0" data-correct="false">Irritable bowel syndrome</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q27">
+                    <p id="q27">27. Most common cause of exacerbation of COPD?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Pneumonia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Pulmonary embolism</li>
+                        <li role="radio" tabindex="0" data-correct="false">Heart failure</li>
+                        <li role="radio" tabindex="0" data-correct="false">Respiratory syncytial virus</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q30">
+                    <p id="q30">30. What is the most common cause of Iron Deficiency Anemia in adults?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Chronic blood loss</li>
+                        <li role="radio" tabindex="0" data-correct="false">Malnutrition</li>
+                        <li role="radio" tabindex="0" data-correct="false">Malabsorption</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hemolysis</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q6">
+                    <p id="q6">6. Homan's sign is seen in which disease?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Deep Vein Thrombosis (DVT)</li>
+                        <li role="radio" tabindex="0" data-correct="false">Pulmonary Embolism</li>
+                        <li role="radio" tabindex="0" data-correct="false">Peripheral Arterial Disease</li>
+                        <li role="radio" tabindex="0" data-correct="false">Chronic Venous Insufficiency</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q16">
+                    <p id="q16">16. What is the characteristic feature of diabetic nephropathy?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Proteinuria</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hematuria</li>
+                        <li role="radio" tabindex="0" data-correct="false">Glycosuria</li>
+                        <li role="radio" tabindex="0" data-correct="false">Ketonuria</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q19">
+                    <p id="q19">19. Most common cause of meningitis in adults?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Streptococcus pneumoniae</li>
+                        <li role="radio" tabindex="0" data-correct="false">Neisseria meningitidis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Haemophilus influenzae</li>
+                        <li role="radio" tabindex="0" data-correct="false">Listeria monocytogenes</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q20">
+                    <p id="q20">20. Best drug for hypertension in pregnancy?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Methyldopa</li>
+                        <li role="radio" tabindex="0" data-correct="false">ACE inhibitors</li>
+                        <li role="radio" tabindex="0" data-correct="false">Angiotensin receptor blockers</li>
+                        <li role="radio" tabindex="0" data-correct="false">Beta blockers</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q29">
+                    <p id="q29">29. Diagnosis of obstructive sleep apnea is by:</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Sleep study</li>
+                        <li role="radio" tabindex="0" data-correct="false">Spirometry</li>
+                        <li role="radio" tabindex="0" data-correct="false">Pulse oximetry</li>
+                        <li role="radio" tabindex="0" data-correct="false">Chest X-ray</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q31">
+                    <p id="q31">31. Drug of choice for generalized tonic-clonic convulsions:</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Valproic acid</li>
+                        <li role="radio" tabindex="0" data-correct="false">Carbamazepine</li>
+                        <li role="radio" tabindex="0" data-correct="false">Lamotrigine</li>
+                        <li role="radio" tabindex="0" data-correct="false">Phenytoin</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q33">
+                    <p id="q33">33. Classic sign in Parkinson's disease?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Tremor at rest</li>
+                        <li role="radio" tabindex="0" data-correct="false">Wide gait</li>
+                        <li role="radio" tabindex="0" data-correct="false">Intention tremor</li>
+                        <li role="radio" tabindex="0" data-correct="false">Postural tremor</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q38">
+                    <p id="q38">38. What is the most sensitive test for SLE?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Double-strand DNA</li>
+                        <li role="radio" tabindex="0" data-correct="false">ANA</li>
+                        <li role="radio" tabindex="0" data-correct="false">ESR</li>
+                        <li role="radio" tabindex="0" data-correct="false">Complement levels</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q40">
+                    <p id="q40">40. Preferred imaging in acute appendicitis in adult male?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">CT scan</li>
+                        <li role="radio" tabindex="0" data-correct="false">Ultrasound</li>
+                        <li role="radio" tabindex="0" data-correct="false">MRI</li>
+                        <li role="radio" tabindex="0" data-correct="false">X-ray</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q41">
+                    <p id="q41">41. What is the best diagnostic test for celiac disease?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Anti-tissue transglutaminase antibodies (tTG)</li>
+                        <li role="radio" tabindex="0" data-correct="false">Endoscopy with biopsy</li>
+                        <li role="radio" tabindex="0" data-correct="false">Anti-gliadin antibodies</li>
+                        <li role="radio" tabindex="0" data-correct="false">HLA typing</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q42">
+                    <p id="q42">42. Cauliflower ear is found in?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Auricular hematoma</li>
+                        <li role="radio" tabindex="0" data-correct="false">External otitis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Tympanic membrane perforation</li>
+                        <li role="radio" tabindex="0" data-correct="false">Otosclerosis</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q43">
+                    <p id="q43">43. What is the treatment of chronic stable angina?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Beta blocker</li>
+                        <li role="radio" tabindex="0" data-correct="false">Aspirin</li>
+                        <li role="radio" tabindex="0" data-correct="false">Nitrate</li>
+                        <li role="radio" tabindex="0" data-correct="false">CCB</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q44">
+                    <p id="q44">44. What is the most common organism causing lower UTI in females?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">E. coli</li>
+                        <li role="radio" tabindex="0" data-correct="false">Staphylococcus</li>
+                        <li role="radio" tabindex="0" data-correct="false">Klebsiella</li>
+                        <li role="radio" tabindex="0" data-correct="false">Proteus</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q46">
+                    <p id="q46">46. Treatment of rhinosinusitis?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Amoxicillin-clavulanic acid</li>
+                        <li role="radio" tabindex="0" data-correct="false">Azithromycin</li>
+                        <li role="radio" tabindex="0" data-correct="false">Ceftriaxone</li>
+                        <li role="radio" tabindex="0" data-correct="false">Ciprofloxacin</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q47">
+                    <p id="q47">47. What is the complication of untreated hypothyroidism?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Myxedema coma</li>
+                        <li role="radio" tabindex="0" data-correct="false">Thyroid storm</li>
+                        <li role="radio" tabindex="0" data-correct="false">Graves disease</li>
+                        <li role="radio" tabindex="0" data-correct="false">Thyroiditis</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q48">
+                    <p id="q48">48. The most common cause of primary hyperaldosteronism?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Adrenal adenomas</li>
+                        <li role="radio" tabindex="0" data-correct="false">Bilateral adrenal hyperplasia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Pituitary causes</li>
+                        <li role="radio" tabindex="0" data-correct="false">Adrenal carcinoma</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q49">
+                    <p id="q49">49. What is the treatment of chronic migraine?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Beta blocker</li>
+                        <li role="radio" tabindex="0" data-correct="false">Triptan</li>
+                        <li role="radio" tabindex="0" data-correct="false">NSAIDs</li>
+                        <li role="radio" tabindex="0" data-correct="false">Antiemetics</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q50">
+                    <p id="q50">50. Which of the following is not a risk factor for DVT?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Anticoagulant therapy</li>
+                        <li role="radio" tabindex="0" data-correct="false">Immobilization</li>
+                        <li role="radio" tabindex="0" data-correct="false">Surgery</li>
+                        <li role="radio" tabindex="0" data-correct="false">Cancer</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q55">
+                    <p id="q55">55. What is the classic sign of tension pneumothorax?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Shifting of trachea to opposite side</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hyperresonance on percussion</li>
+                        <li role="radio" tabindex="0" data-correct="false">Bilateral chest expansion</li>
+                        <li role="radio" tabindex="0" data-correct="false">Chest crackles</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q61">
+                    <p id="q61">61. Most common site of colorectal cancer metastasis?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Liver</li>
+                        <li role="radio" tabindex="0" data-correct="false">Brain</li>
+                        <li role="radio" tabindex="0" data-correct="false">Lung</li>
+                        <li role="radio" tabindex="0" data-correct="false">Adrenal</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q65">
+                    <p id="q65">65. Most common type of stroke?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Ischemic</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hemorrhagic</li>
+                        <li role="radio" tabindex="0" data-correct="false">Lacunar</li>
+                        <li role="radio" tabindex="0" data-correct="false">Embolic</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q69">
+                    <p id="q69">69. Signs and symptoms of Horner's syndrome?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Ptosis, miosis, and anhidrosis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Mydriasis and ptosis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Miosis and mydriasis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Ptosis and hyperhidrosis</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q70">
+                    <p id="q70">70. Pellagra is due to which vitamin deficiency?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">B3</li>
+                        <li role="radio" tabindex="0" data-correct="false">B1</li>
+                        <li role="radio" tabindex="0" data-correct="false">B6</li>
+                        <li role="radio" tabindex="0" data-correct="false">B12</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q77">
+                    <p id="q77">77. Most common cause of peptic ulcer?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">H. pylori</li>
+                        <li role="radio" tabindex="0" data-correct="false">NSAIDs</li>
+                        <li role="radio" tabindex="0" data-correct="false">Stress</li>
+                        <li role="radio" tabindex="0" data-correct="false">Alcohol</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q78">
+                    <p id="q78">78. Side effects of ACE inhibitors?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Hyperkalemia and angioedema</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hypernatremia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hypokalemia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hypercalcemia</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q88">
+                    <p id="q88">88. CT scan showing ground glass appearance is seen in?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Pneumocystis jirovecii pneumonia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Pulmonary embolism</li>
+                        <li role="radio" tabindex="0" data-correct="false">Sarcoidosis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Tuberculosis</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q90">
+                    <p id="q90">90. What is the cause of Trousseau's sign and Chvostek's signs?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Hypocalcemia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hypercalcemia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hyponatremia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hypermagnesemia</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q92">
+                    <p id="q92">92. What is the first-line treatment for H. pylori?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">PPI, amoxicillin plus clarithromycin</li>
+                        <li role="radio" tabindex="0" data-correct="false">PPI alone</li>
+                        <li role="radio" tabindex="0" data-correct="false">Amoxicillin alone</li>
+                        <li role="radio" tabindex="0" data-correct="false">Clarithromycin alone</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q93">
+                    <p id="q93">93. Most common cause of hypoglycemia in Type 1 DM?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Overdose of insulin</li>
+                        <li role="radio" tabindex="0" data-correct="false">Diabetic nephropathy</li>
+                        <li role="radio" tabindex="0" data-correct="false">Insufficient food intake</li>
+                        <li role="radio" tabindex="0" data-correct="false">Exercise</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q7">
+                    <p id="q7">7. Most common organism in community acquired pneumonia?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Streptococcus pneumoniae</li>
+                        <li role="radio" tabindex="0" data-correct="false">Haemophilus influenzae</li>
+                        <li role="radio" tabindex="0" data-correct="false">Mycoplasma pneumoniae</li>
+                        <li role="radio" tabindex="0" data-correct="false">Klebsiella pneumoniae</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q9">
+                    <p id="q9">9. Most common side effect of thiazides?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Hypokalemia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hyperkalemia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hyperglycemia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hyperuricemia</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q11">
+                    <p id="q11">11. Most common cause of new onset atrial fibrillation?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Hypertension</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hyperthyroidism</li>
+                        <li role="radio" tabindex="0" data-correct="false">Coronary artery disease</li>
+                        <li role="radio" tabindex="0" data-correct="false">Valvular heart disease</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q12">
+                    <p id="q12">12. Most common cause of secondary hypertension?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Renal artery stenosis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Primary aldosteronism</li>
+                        <li role="radio" tabindex="0" data-correct="false">Pheochromocytoma</li>
+                        <li role="radio" tabindex="0" data-correct="false">Cushing syndrome</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q13">
+                    <p id="q13">13. Most common cause of hypercalcemia in hospitalized patients?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Malignancy</li>
+                        <li role="radio" tabindex="0" data-correct="false">Primary hyperparathyroidism</li>
+                        <li role="radio" tabindex="0" data-correct="false">Vitamin D toxicity</li>
+                        <li role="radio" tabindex="0" data-correct="false">Sarcoidosis</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q15">
+                    <p id="q15">15. Most common cause of left ventricular hypertrophy?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Hypertension</li>
+                        <li role="radio" tabindex="0" data-correct="false">Aortic stenosis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hypertrophic cardiomyopathy</li>
+                        <li role="radio" tabindex="0" data-correct="false">Athletic heart</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q17">
+                    <p id="q17">17. Most common cause of peptic ulcers?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">H. pylori infection</li>
+                        <li role="radio" tabindex="0" data-correct="false">NSAIDs</li>
+                        <li role="radio" tabindex="0" data-correct="false">Stress</li>
+                        <li role="radio" tabindex="0" data-correct="false">Alcohol</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q18">
+                    <p id="q18">18. Most common complication of chronic kidney disease?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Hypocalcemia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hyperkalemia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Metabolic acidosis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Anemia</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q21">
+                    <p id="q21">21. First-line treatment of hypertension in pregnancy?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Methyldopa</li>
+                        <li role="radio" tabindex="0" data-correct="false">Labetalol</li>
+                        <li role="radio" tabindex="0" data-correct="false">Nifedipine</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hydralazine</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q22">
+                    <p id="q22">22. Most common cause of cough in non-smokers?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Post-nasal drip</li>
+                        <li role="radio" tabindex="0" data-correct="false">Asthma</li>
+                        <li role="radio" tabindex="0" data-correct="false">GERD</li>
+                        <li role="radio" tabindex="0" data-correct="false">ACE inhibitors</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q23">
+                    <p id="q23">23. Most common cause of upper respiratory obstruction in adults?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Epiglottitis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Laryngeal tumor</li>
+                        <li role="radio" tabindex="0" data-correct="false">Foreign body aspiration</li>
+                        <li role="radio" tabindex="0" data-correct="false">Vocal cord paralysis</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q24">
+                    <p id="q24">24. Initial treatment of DKA?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">IV fluids</li>
+                        <li role="radio" tabindex="0" data-correct="false">Insulin</li>
+                        <li role="radio" tabindex="0" data-correct="false">Potassium replacement</li>
+                        <li role="radio" tabindex="0" data-correct="false">Bicarbonate therapy</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q25">
+                    <p id="q25">25. Initial treatment of acute Crohn's disease?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Corticosteroids</li>
+                        <li role="radio" tabindex="0" data-correct="false">5-ASA compounds</li>
+                        <li role="radio" tabindex="0" data-correct="false">Biologics</li>
+                        <li role="radio" tabindex="0" data-correct="false">Immunomodulators</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q26">
+                    <p id="q26">26. Treatment of choice in hyperthyroidism?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Methimazole</li>
+                        <li role="radio" tabindex="0" data-correct="false">Propylthiouracil</li>
+                        <li role="radio" tabindex="0" data-correct="false">Radioactive iodine</li>
+                        <li role="radio" tabindex="0" data-correct="false">Beta blockers</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q28">
+                    <p id="q28">28. First-line management of exacerbated asthma?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Short-acting beta agonists (SABA)</li>
+                        <li role="radio" tabindex="0" data-correct="false">Inhaled corticosteroids</li>
+                        <li role="radio" tabindex="0" data-correct="false">Systemic corticosteroids</li>
+                        <li role="radio" tabindex="0" data-correct="false">Anticholinergics</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q32">
+                    <p id="q32">32. Earliest symptom of Parkinson's disease?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Asymmetric resting tremor</li>
+                        <li role="radio" tabindex="0" data-correct="false">Bradykinesia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Postural instability</li>
+                        <li role="radio" tabindex="0" data-correct="false">Rigidity</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q34">
+                    <p id="q34">34. Treatment of essential tremor?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Beta blockers</li>
+                        <li role="radio" tabindex="0" data-correct="false">Levodopa</li>
+                        <li role="radio" tabindex="0" data-correct="false">Anticholinergics</li>
+                        <li role="radio" tabindex="0" data-correct="false">Dopamine agonists</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q35">
+                    <p id="q35">35. Most common electrolyte disturbance in CRF?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Hyperkalemia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hyponatremia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hypocalcemia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hyperphosphatemia</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q37">
+                    <p id="q37">37. Treatment of ischemic stroke in first 4 hours?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">tPA (tissue plasminogen activator)</li>
+                        <li role="radio" tabindex="0" data-correct="false">Aspirin</li>
+                        <li role="radio" tabindex="0" data-correct="false">Heparin</li>
+                        <li role="radio" tabindex="0" data-correct="false">Clopidogrel</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q39">
+                    <p id="q39">39. Symptoms of weight loss, sweating, positive PPD test is most likely?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Tuberculosis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Sarcoidosis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Histoplasmosis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Pneumonia</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q51">
+                    <p id="q51">51. What is the cause of wide mediastinum in chest X-ray?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Aortic dissection</li>
+                        <li role="radio" tabindex="0" data-correct="false">Pneumothorax</li>
+                        <li role="radio" tabindex="0" data-correct="false">Congestive heart failure</li>
+                        <li role="radio" tabindex="0" data-correct="false">Pulmonary embolism</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q53">
+                    <p id="q53">53. Treatment for anaphylactic shock?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Epinephrine</li>
+                        <li role="radio" tabindex="0" data-correct="false">Antihistamines</li>
+                        <li role="radio" tabindex="0" data-correct="false">Corticosteroids</li>
+                        <li role="radio" tabindex="0" data-correct="false">Beta-agonists</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q56">
+                    <p id="q56">56. Best diagnostic test for pulmonary embolism?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">CT pulmonary angiogram</li>
+                        <li role="radio" tabindex="0" data-correct="false">Chest X-ray</li>
+                        <li role="radio" tabindex="0" data-correct="false">D-dimer</li>
+                        <li role="radio" tabindex="0" data-correct="false">V/Q scan</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q62">
+                    <p id="q62">62. Most common site of lung cancer metastasis?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Bone</li>
+                        <li role="radio" tabindex="0" data-correct="false">Brain</li>
+                        <li role="radio" tabindex="0" data-correct="false">Liver</li>
+                        <li role="radio" tabindex="0" data-correct="false">Adrenal glands</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q63">
+                    <p id="q63">63. Treatment of hypertension with heart failure with reduced EF?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">ACE inhibitors</li>
+                        <li role="radio" tabindex="0" data-correct="false">Diuretics</li>
+                        <li role="radio" tabindex="0" data-correct="false">Beta blockers</li>
+                        <li role="radio" tabindex="0" data-correct="false">Calcium channel blockers</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q64">
+                    <p id="q64">64. Symptoms of hyperventilation syndrome?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Tachypnea</li>
+                        <li role="radio" tabindex="0" data-correct="false">Bradypnea</li>
+                        <li role="radio" tabindex="0" data-correct="false">Coma</li>
+                        <li role="radio" tabindex="0" data-correct="false">Respiratory acidosis</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q66">
+                    <p id="q66">66. Risk factors for colorectal cancer?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Smoking</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hyperlipidemia</li>
+                        <li role="radio" tabindex="0" data-correct="false">High-fat diet</li>
+                        <li role="radio" tabindex="0" data-correct="false">Obesity</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q67">
+                    <p id="q67">67. Treatment of acute angle-closure glaucoma?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Mannitol</li>
+                        <li role="radio" tabindex="0" data-correct="false">Beta blockers</li>
+                        <li role="radio" tabindex="0" data-correct="false">NSAIDs</li>
+                        <li role="radio" tabindex="0" data-correct="false">Prostaglandin analogs</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q68">
+                    <p id="q68">68. Which is characteristic of nephrotic syndrome?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Proteinuria >3.5g/day</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hypertension</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hematuria</li>
+                        <li role="radio" tabindex="0" data-correct="false">Azotemia</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q71">
+                    <p id="q71">71. Wernicke's encephalopathy is due to which vitamin deficiency?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">B1 (Thiamine)</li>
+                        <li role="radio" tabindex="0" data-correct="false">B2 (Riboflavin)</li>
+                        <li role="radio" tabindex="0" data-correct="false">B3 (Niacin)</li>
+                        <li role="radio" tabindex="0" data-correct="false">B12 (Cobalamin)</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q72">
+                    <p id="q72">72. Drug of choice for Lyme disease?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Doxycycline</li>
+                        <li role="radio" tabindex="0" data-correct="false">Azithromycin</li>
+                        <li role="radio" tabindex="0" data-correct="false">Ceftriaxone</li>
+                        <li role="radio" tabindex="0" data-correct="false">Amoxicillin</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q73">
+                    <p id="q73">73. Drug of choice for syphilis?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Penicillin G</li>
+                        <li role="radio" tabindex="0" data-correct="false">Doxycycline</li>
+                        <li role="radio" tabindex="0" data-correct="false">Ceftriaxone</li>
+                        <li role="radio" tabindex="0" data-correct="false">Azithromycin</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q74">
+                    <p id="q74">74. Most common cause of upper GI bleeding?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Peptic ulcer</li>
+                        <li role="radio" tabindex="0" data-correct="false">Esophageal varices</li>
+                        <li role="radio" tabindex="0" data-correct="false">Mallory-Weiss tear</li>
+                        <li role="radio" tabindex="0" data-correct="false">Gastric cancer</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q79">
+                    <p id="q79">79. In chest X-ray, boot-shaped heart is seen in?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Tetralogy of Fallot</li>
+                        <li role="radio" tabindex="0" data-correct="false">Transposition of great arteries</li>
+                        <li role="radio" tabindex="0" data-correct="false">Atrial septal defect</li>
+                        <li role="radio" tabindex="0" data-correct="false">Ventricular septal defect</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q80">
+                    <p id="q80">80. Treatment of bacterial meningitis?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Antibiotics and steroids</li>
+                        <li role="radio" tabindex="0" data-correct="false">Antifungal drugs</li>
+                        <li role="radio" tabindex="0" data-correct="false">Antiviral drugs</li>
+                        <li role="radio" tabindex="0" data-correct="false">Supportive care only</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q81">
+                    <p id="q81">81. Butterfly rash is seen in?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Systemic Lupus Erythematosus (SLE)</li>
+                        <li role="radio" tabindex="0" data-correct="false">Rosacea</li>
+                        <li role="radio" tabindex="0" data-correct="false">Seborrheic dermatitis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Contact dermatitis</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q82">
+                    <p id="q82">82. Palpable purpura is seen in?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Vasculitis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Thrombocytopenia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hemophilia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Von Willebrand disease</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q83">
+                    <p id="q83">83. Treatment of acute gout?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Colchicine</li>
+                        <li role="radio" tabindex="0" data-correct="false">Prednisolone</li>
+                        <li role="radio" tabindex="0" data-correct="false">Allopurinol</li>
+                        <li role="radio" tabindex="0" data-correct="false">Febuxostat</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q85">
+                    <p id="q85">85. Most common causative organism of lower respiratory tract infection?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Streptococcus pneumoniae</li>
+                        <li role="radio" tabindex="0" data-correct="false">Haemophilus influenzae</li>
+                        <li role="radio" tabindex="0" data-correct="false">Moraxella catarrhalis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Klebsiella pneumoniae</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q86">
+                    <p id="q86">86. Classical triad of pheochromocytoma?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Headache, sweating, palpitations</li>
+                        <li role="radio" tabindex="0" data-correct="false">Fever, weight loss, night sweats</li>
+                        <li role="radio" tabindex="0" data-correct="false">Polyuria, polydipsia, polyphagia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Fatigue, weight gain, cold intolerance</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q87">
+                    <p id="q87">87. Most common cause of acute pancreatitis?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Gallstones</li>
+                        <li role="radio" tabindex="0" data-correct="false">Alcohol</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hyperlipidemia</li>
+                        <li role="radio" tabindex="0" data-correct="false">Medications</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q89">
+                    <p id="q89">89. Most common cause of acute kidney injury in hospitalized patients?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Pre-renal causes (hypovolemia and shock)</li>
+                        <li role="radio" tabindex="0" data-correct="false">Post-renal causes (obstruction)</li>
+                        <li role="radio" tabindex="0" data-correct="false">Acute tubular necrosis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Acute interstitial nephritis</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q91">
+                    <p id="q91">91. What is the result of ruptured berry aneurysm?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Subarachnoid hemorrhage</li>
+                        <li role="radio" tabindex="0" data-correct="false">Intracranial hemorrhage</li>
+                        <li role="radio" tabindex="0" data-correct="false">Ischemic stroke</li>
+                        <li role="radio" tabindex="0" data-correct="false">Cerebral thrombosis</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q94">
+                    <p id="q94">94. Most common complication of diabetes mellitus?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Diabetic retinopathy</li>
+                        <li role="radio" tabindex="0" data-correct="false">Diabetic nephropathy</li>
+                        <li role="radio" tabindex="0" data-correct="false">Diabetic neuropathy</li>
+                        <li role="radio" tabindex="0" data-correct="false">Cardiovascular disease</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q45">
+                    <p id="q45">45. First-line treatment of UTI?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Nitrofurantoin</li>
+                        <li role="radio" tabindex="0" data-correct="false">Ciprofloxacin</li>
+                        <li role="radio" tabindex="0" data-correct="false">Amoxicillin</li>
+                        <li role="radio" tabindex="0" data-correct="false">Trimethoprim-sulfamethoxazole</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q58">
+                    <p id="q58">58. Common causes of new onset atrial fibrillation include:</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Hypertension</li>
+                        <li role="radio" tabindex="0" data-correct="false">Coronary artery disease</li>
+                        <li role="radio" tabindex="0" data-correct="false">Valvular heart disease</li>
+                        <li role="radio" tabindex="0" data-correct="false">All of the above</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q59">
+                    <p id="q59">59. Most common cause of new onset atrial fibrillation?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Hyperthyroidism</li>
+                        <li role="radio" tabindex="0" data-correct="false">Valvular arterial disease</li>
+                        <li role="radio" tabindex="0" data-correct="false">Coronary artery disease</li>
+                        <li role="radio" tabindex="0" data-correct="false">Hypertension</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q60">
+                    <p id="q60">60. Signs of severe hypoxia?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Cyanosis</li>
+                        <li role="radio" tabindex="0" data-correct="false">Tachypnea</li>
+                        <li role="radio" tabindex="0" data-correct="false">Bradypnea</li>
+                        <li role="radio" tabindex="0" data-correct="false">Euphoria</li>
+                    </ul>
+                </div>
+                <div class="question" role="group" aria-labelledby="q75">
+                    <p id="q75">75. Most common complication of peptic ulcer?</p>
+                    <ul class="options" role="radiogroup">
+                        <li role="radio" tabindex="0" data-correct="true">Bleeding</li>
+                        <li role="radio" tabindex="0" data-correct="false">Perforation</li>
+                        <li role="radio" tabindex="0" data-correct="false">Obstruction</li>
+                        <li role="radio" tabindex="0" data-correct="false">Malignant transformation</li>
+                    </ul>
+                </div>
             </div>
         </main>
+
+        <div class="exam-actions">
+            <button id="submit-exam" class="submit-btn" role="button">Submit Exam</button>
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 Dr. Mu3ath</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Dr. Mu3ath - Yemen Medical License Exam</p>
+            <div class="social-links">
+                <a href="#" aria-label="Visit our Facebook page">Facebook</a>
+                <a href="#" aria-label="Visit our Twitter page">Twitter</a>
+                <a href="#" aria-label="Contact us via email">Contact</a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
