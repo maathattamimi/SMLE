@@ -1,0 +1,154 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #e0f7fa; /* Light blue background */
+    line-height: 1.6;
+}
+
+/* Landing Page */
+.landing-page {
+    background-image: url('aden.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    filter: brightness(0.8);
+    position: relative;
+}
+
+.landing-content {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    padding: 40px;
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.landing-content h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #0288d1; /* Light blue for contrast */
+}
+
+.landing-content .quote {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #01579b; /* Darker blue for contrast */
+}
+
+/* Exam Page */
+.exam-page {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent light background */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #0288d1; /* Light blue for contrast */
+}
+
+header .exam-details {
+    font-size: 1.2em;
+    color: #01579b; /* Darker blue for contrast */
+}
+
+.question-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.question {
+    display: block;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.question p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.options li {
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.options li:hover {
+    background: rgba(200, 200, 200, 0.2); /* Slightly brighter on hover */
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.options li[data-correct="true"]:hover {
+    background: rgba(165, 214, 167, 0.5); /* Light green for correct answer */
+    box-shadow: 0 0 10px rgba(165, 214, 167, 0.5); /* Glow effect */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #e0f7fa;
+    color: #333;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .landing-content h1 {
+        font-size: 2em;
+    }
+
+    .landing-content .quote {
+        font-size: 1em;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header .exam-details {
+        font-size: 1em;
+    }
+
+    .question p {
+        font-size: 1em;
+    }
+
+    .options li {
+        padding: 10px;
+    }
+
+    .navigation button {
+        padding: 8px 16px;
+    }
+}
